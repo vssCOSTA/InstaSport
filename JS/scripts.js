@@ -110,6 +110,6 @@ function loadRandomPosts() {
 
 // Chama a função para carregar os posts e adicionar posts aleatórios quando a página é carregada
 window.onload = function() {
-    loadPostsFromLocalStorage();
-    loadRandomPosts();
+    loadRandomPosts(); // Carrega os posts aleatórios primeiro
+    loadPostsFromLocalStorage(); // Depois carrega os posts do localStorage
 };
